@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+class Detector_mayoria_edad {
+    std::string nombre;
+    int Ci;
+public:
+    Detector_mayoria_edad(std::string nombre, int Ci) {
+        this->nombre = nombre;
+        this->Ci = Ci;
+    }
+    void Entrada() {
+        std::cout << "Entrada Aceptada" << std::endl;
+    }
+    void Noentrada() {
+        std::cout << "Entrada Denegada" << std::endl;
+    }
+};
+
+int main() {
+    Detector_mayoria_edad detector("John Doe", 123456789);
+    detector.Entrada();
+    detector.Noentrada();
+    return 0;
+}
+

@@ -1,0 +1,18 @@
+#include <iostream>
+
+int main() {
+    int n1, n2;
+    std::cout << "Bienvenido al programa de divisiones" << std::endl;
+    std::cout << "Ingrese un numero" << std::endl;
+    std::cin >> n1;
+    std::cout << "Ingrese un segundo numero" << std::endl;
+    std::cin >> n2;
+    if (n2 == 0) {
+        throw std::runtime_error("Hey, recuerda que no es posible dividir para 0");
+    } else {
+        std::cout << "El resultado es: " << n1 / n2 << std::endl;
+    }
+    return 0;
+}
+
+

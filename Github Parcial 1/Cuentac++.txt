@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+class Cuenta {
+    std::string titular;
+    int cantidad;
+public:
+    Cuenta(std::string titular, int cantidad) {
+        this->titular = titular;
+        this->cantidad = cantidad;
+    }
+    void ingresando() {
+        std::cout << "Ingresando...." << std::endl;
+    }
+    void retirando() {
+        std::cout << "Retirando..." << std::endl;
+    }
+};
+
+int main() {
+    Cuenta cuenta("titular", 0);
+    cuenta.ingresando();
+    cuenta.retirando();
+    return 0;
+}
+

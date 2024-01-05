@@ -1,0 +1,26 @@
+#include <iostream>
+
+class Suma {
+    int numero1;
+    int numero2;
+public:
+    Suma(int numero1, int numero2) {
+        this->numero1 = numero1;
+        this->numero2 = numero2;
+    }
+    void suma() {
+        std::cout << "Ingrese el numero 1: ";
+        std::cin >> numero1;
+        std::cout << "Ingrese el numero 2: ";
+        std::cin >> numero2;
+        std::cout << "El resultado de la suma es:" << std::endl;
+        std::cout << numero1 + numero2 << std::endl;
+    }
+};
+
+int main() {
+    Suma suma(0, 0);
+    suma.suma();
+    return 0;
+}
+

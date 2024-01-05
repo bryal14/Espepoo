@@ -1,0 +1,196 @@
+#include <iostream>
+#include <string>
+
+class Persona {
+private:
+    std::string nombre;
+    int edad;
+    int cedula;
+public:
+    Persona(std::string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    void setCedula(int cedula) {
+        this->cedula = cedula;
+    }
+    int getCedula() {
+        return cedula;
+    }
+    void comer() {
+        std::cout << "La persona está comiendo" << std::endl;
+    }
+    void dormir() {
+        std::cout << "La persona está durmiendo" << std::endl;
+    }
+};
+
+class Zoo {
+private:
+    std::string nombre;
+    int nregistro;
+public:
+    Zoo(std::string nombre, int nregistro) {
+        this->nombre = nombre;
+        this->nregistro = nregistro;
+    }
+    void setNregistro(int nregistro) {
+        this->nregistro = nregistro;
+    }
+    int getNregistro() {
+        return nregistro;
+    }
+    void comer() {
+        std::cout << "Los animales del zoo están comiendo" << std::endl;
+    }
+    void dormir() {
+        std::cout << "Los animales del zoo están durmiendo" << std::endl;
+    }
+};
+
+class Visitante {
+private:
+    int cedula;
+    std::string nombre;
+    int edad;
+public:
+    Visitante(int cedula, std::string nombre, int edad) {
+        this->cedula = cedula;
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    void comprar() {
+        std::cout << "El visitante está comprando" << std::endl;
+    }
+};
+
+class Cuidador {
+private:
+    int cedula;
+    std::string nombre;
+    int edad;
+public:
+    Cuidador(int cedula, std::string nombre, int edad) {
+        this->cedula = cedula;
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    void alimentar() {
+        std::cout << "El cuidador está alimentando a los animales" << std::endl;
+    }
+};
+
+class Leon {
+private:
+    std::string nombre;
+    int edad;
+public:
+    Leon(std::string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    void cazar() {
+        std::cout << "El león está cazando" << std::endl;
+    }
+    void rugir() {
+        std::cout << "El león está rugiendo" << std::endl;
+    }
+};
+
+class Pinguino {
+private:
+    std::string nombre;
+    int edad;
+public:
+    Pinguino(std::string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    void nadar() {
+        std::cout << "El pingüino está nadando" << std::endl;
+    }
+    void pescar() {
+        std::cout << "El pingüino está pescando" << std::endl;
+    }
+};
+
+int main() {
+    std::string nombrePersona;
+    int edadPersona;
+    std::string nombreZoo;
+    int edadZoo;
+    int opcion;
+    bool denuevo = true;
+    do {
+        try {
+            std::cout << "1 Para Persona" << std::endl;
+            std::cout << "2 Para Visitante" << std::endl;
+            std::cout << "3 Para Cuidador" << std::endl;
+            std::cout << "4 Para Zoo" << std::endl;
+            std::cout << "5 Para Leon" << std::endl;
+            std::cout << "6 Para Pinguino" << std::endl;
+            std::cin >> opcion;
+            switch (opcion) {
+                case 1:
+                    std::cout << "Ingrese el nombre de la persona: ";
+                    std::cin >> nombrePersona;
+                    std::cout << "Ingrese la edad de la persona: ";
+                    std::cin >> edadPersona;
+                    Persona persona(nombrePersona, edadPersona);
+                    std::cout << "Ingrese la cedula de la persona: ";
+                    persona.setCedula(12);
+                    std::cout << "\nLa cedula de la persona es: " << persona.getCedula() << std::endl;
+                    std::cout << "\nUsted realizara las siguientes acciones" << std::endl;
+                    persona.comer();
+                    persona.dormir();
+                    std::cin.ignore();
+                    break;
+                case 2:
+                    std::cout << "Usted ha elegido al visitante" << std::endl;
+                    Visitante visitante(12345, "Juan", 70);
+                    visitante.comprar();
+                    break;
+                case 3:
+                    std::cout << "Usted ha elegido al cuidador" << std::endl;
+                    Cuidador cuidador(00433250, "Bryan", 56);
+                    cuidador.alimentar();
+                    break;
+                case 4:
+                    std::cout << "Ingrese el Nombre del ZOO: ";
+                    std::cin >> nombreZoo;
+                    std::cout << "Ingrese su edad para entrar al Zoo: ";
+                    std::cin >> edadZoo;
+                    Zoo zoo(nombreZoo, 31);
+                    std::cout << "Ingrese su numero de registro: ";
+                    zoo.setNregistro(1234);
+                    std::cout << "\nEl numero de registro es: " << zoo.getNregistro() << std::endl;
+                    std::cout << "Los animales realizaran las siguientes opciones" << std::endl;
+                    zoo.comer();
+                    zoo.dormir();
+                    std::cin.ignore();
+                    break;
+                case 5:
+                    std::cout << "Usted ha elegido Leon" << std::endl;
+                    Leon leon("Lion", 5);
+                    std::cout << "El leon realiza las siguientes acciones" << std::endl;
+                    leon.cazar();
+                    leon.rugir();
+                    break;
+                case 6:
+                    std::cout << "Usted ha elegido Pinguino" << std::endl;
+                    Pinguino pinguino("Pingu", 2);
+                    std::cout << "El pinguino realiza las siguientes acciones" << std::endl;
+                    pinguino.nadar();
+                    pinguino.pescar();
+                    break;
+            }
+            denuevo = false;
+        } catch (std::exception& e) {
+            std::cout << "\nNo ingreses cadenas en donde van números!!!" << std::endl;
+            std::cin.ignore();
+        }
+    } while (denuevo);
+    return 0;
+}
+
+

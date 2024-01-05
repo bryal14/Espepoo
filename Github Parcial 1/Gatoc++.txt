@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+
+class Animales {
+public:
+    std::string nombre;
+    Animales(std::string nombre) {
+        this->nombre = nombre;
+    }
+};
+
+class Gato : public Animales {
+public:
+    std::string color_pelo;
+    Gato(std::string color_pelo, std::string nombre) : Animales(nombre) {
+        this->color_pelo = color_pelo;
+    }
+    void trepar_arbol() {
+        std::cout << "trepando arbol...." << std::endl;
+    }
+    void cazar_raton() {
+        std::cout << "cazando raton..." << std::endl;
+    }
+};
+
+

@@ -1,0 +1,107 @@
+#include <iostream>
+#include <string>
+
+class Gato {
+private:
+    std::string color;
+    std::string nombre;
+    int edad;
+public:
+    Gato(std::string color, std::string nombre) {
+        this->color = color;
+        this->nombre = nombre;
+    }
+    void setEdad(int edad) {
+        this->edad = edad;
+    }
+    int getEdad() {
+        return edad;
+    }
+    void cazar_raton() {
+        std::cout << "El gato " << nombre << " está cazando un ratón" << std::endl;
+    }
+    void trepar_arbol() {
+        std::cout << "El gato " << nombre << " está trepando un árbol" << std::endl;
+    }
+    void hacer_ruido(std::string sonido) {
+        std::cout << "El gato " << nombre << " hace el sonido: " << sonido << std::endl;
+    }
+};
+
+class Perro {
+private:
+    std::string raza;
+    std::string nombre;
+    int edad;
+public:
+    Perro(std::string raza, std::string nombre) {
+        this->raza = raza;
+        this->nombre = nombre;
+    }
+    void setEdad(int edad) {
+        this->edad = edad;
+    }
+    int getEdad() {
+        return edad;
+    }
+    void correr() {
+        std::cout << "El perro " << nombre << " está corriendo" << std::endl;
+    }
+    void jugar() {
+        std::cout << "El perro " << nombre << " está jugando" << std::endl;
+    }
+    void hacer_ruido(std::string sonido) {
+        std::cout << "El perro " << nombre << " hace el sonido: " << sonido << std::endl;
+    }
+};
+
+int main() {
+    std::string animalnombre;
+    int edadAnimal;
+    std::string nombreGato;
+    std::string nombrePerro;
+    
+    std::cout << "1 para ingresar datos de animales" << std::endl;
+    std::cout << "2 para ingresar datos del gato" << std::endl;
+    std::cout << "3 para ingresar datos del perro" << std::endl;
+    
+    int choice;
+    std::cin >> choice;
+    
+    switch(choice) {
+        case 1:
+            std::cout << "Ingrese el animal: ";
+            std::cin >> animalnombre;
+            std::cout << "La edad del animal es: ";
+            std::cin >> edadAnimal;
+            std::cout << "Haciendo ruido" << std::endl;
+            std::cin.ignore();
+            break;
+        case 2:
+            std::cout << "Ingrese el nombre del gato: ";
+            std::cin >> nombreGato;
+            Gato gato("Gris", nombreGato);
+            gato.setEdad(2);
+            std::cout << "La edad del gato es: " << gato.getEdad() << std::endl;
+            gato.cazar_raton();
+            gato.trepar_arbol();
+            std::cin.ignore();
+            gato.hacer_ruido("Maulla");
+            break;
+        case 3:
+            std::cout << "Ingrese el nombre del perro: ";
+            std::cin >> nombrePerro;
+            Perro perro("Doberman", nombrePerro);
+            perro.setEdad(4);
+            std::cout << "La edad del perro es: " << perro.getEdad() << std::endl;
+            perro.correr();
+            perro.jugar();
+            perro.hacer_ruido("Ladra");
+            std::cin.ignore();
+            break;
+    }
+    
+    return 0;
+}
+
+

@@ -1,0 +1,80 @@
+UNIVERSIDAD DE LAS FUERZAS ARMADAS 
+
+NOMBRE: BRYAN ALMEIDA
+NRC:13930
+FECHA: 09/11/2023
+
+
+---¿Que es Git?---
+Git es un sistema de control de versiones distribuido, lo que significa que un clon local del proyecto es un 
+repositorio de control de versiones completo. Estos repositorios locales plenamente funcionales permiten trabajar 
+sin conexión o de forma remota con facilidad. 
+
+----¿Ques es Github?-----------------------------------------------------------------------------------
+GitHub es una plataforma de gestión y organización de proyectos basada en la nube que incorpora las funciones 
+de control de versiones de Git. Es decir que todos los usuarios de GitHub pueden rastrear y gestionar 
+los cambios que se realizan en el código fuente en tiempo real, a la vez que tienen acceso a todas las 
+demás funciones de Git disponibles en el mismo lugar.
+
+----Ventajas y usos-------------------------------------------------------------------------------------
+Cuando comienzas a profundizar en la matería sobre qué es GitHub y el uso que se le da, 
+hay que destacar que aporta una serie de ventajas que enumeramos a continuación:
+
+Acceso a tus repositorios siempre desde cualquier equipo, pues se encuentran almacenados en la nube.
+Con su interfaz es posible tener acceso rápido a los repositorios que tengas.
+Integrado con Git.
+Hace más fácil el manejo y la integración de las modificaciones que realiza cada programador.
+Es gratis.
+Tienes el gran apoyo de la comunidad que usa esta clase de herramienta a diario, por lo que 
+las dudas que se puedan tener son resueltas con suma rapidez.
+
+
+
+Comandos de Git:
+git diff: Muestra las diferencias entre cambios en el directorio de trabajo y el área de preparación.
+git branch -d [rama]: Elimina una rama después de fusionar los cambios.
+git branch -m [nombre_nuevo]: Cambia el nombre de la rama actual.
+git remote add [nombre] [URL]: Agrega un repositorio remoto con un nombre personalizado.
+git fetch: Obtiene información sobre cambios en repositorios remotos.
+git cherry-pick [commit]: Aplica un commit específico a la rama actual.
+git rebase [rama]: Reorganiza y aplica commits de la rama especificada en la rama actual.
+git log --graph: Muestra el historial de commits de una manera gráfica.
+git clean -f: Elimina archivos no rastreados en el directorio de trabajo.
+git bisect: Ayuda a encontrar un commit problemático en una serie de commits.
+git submodule: Gestiona submódulos en un repositorio.
+git init: Inicializa un repositorio Git en un directorio.
+git clone [URL]: Clona un repositorio remoto en tu máquina.
+git add [archivos]: Agrega cambios de archivos al área de preparación.
+git commit -m "mensaje": Guarda cambios en el repositorio con un mensaje descriptivo.
+git status: Muestra el estado de los archivos en el directorio de trabajo.
+git log: Muestra el historial de commits.
+git branch: Lista ramas y muestra la rama actual.
+git checkout [rama]: Cambia a una rama específica.
+git merge [rama]: Fusiona una rama con la rama actual.
+git pull: Obtiene cambios del repositorio remoto y los fusiona en la rama actual.
+git push: Envía cambios locales al repositorio remoto.
+git remote -v: Muestra información sobre los repositorios remotos configurados.
+
+
+Comandos de GitHub:
+git remote add origin [URL]: Asocia tu repositorio local con un repositorio remoto en GitHub.
+git push -u origin [rama]: Envía tu rama al repositorio remoto y establece el seguimiento.
+git pull origin [rama]: Obtiene cambios de una rama remota y los fusiona localmente.
+git clone [URL]: Clona un repositorio remoto en GitHub.
+git fork: Crea una copia personal de un repositorio ajeno en tu cuenta de GitHub.
+git pull request: Envía una solicitud para fusionar tus cambios en un repositorio ajeno.
+git issues: Lista y gestiona problemas o tareas en GitHub.
+git gist: Crea fragmentos de código compartibles en GitHub.
+git stash: Guarda temporalmente cambios sin confirmar.
+git tag: Gestiona etiquetas para versiones específicas del proyecto.
+git blame [archivo]: Muestra quién modificó cada línea de un archivo.
+git reset [opciones]: Deshace cambios locales en diferentes grados.
+
+
+
+Referencias.-------------------------------------------------------------------------------------------------------------------------------
+Gustavo, B. (2019, abril 12). Qué es GitHub y cómo empezar a usarlo. Tutoriales Hostinger. https://www.hostinger.mx/tutoriales/que-es-github
+
+¿Qué es Git? (s/f). Microsoft.com. Recuperado el 10 de noviembre de 2023, de https://learn.microsoft.com/es-es/devops/develop/git/what-is-git
+
+Heras, C. (2023, febrero 15). ¿Qué es GitHub? Guía básica para comenzar a explorarlo. Immune Technology Institute. https://immune.institute/blog/que-es-github-en-desarrollo-web/

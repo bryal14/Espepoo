@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+
+class Animales {
+protected:
+    std::string nombre;
+public:
+    Animales(std::string nombre) {
+        this->nombre = nombre;
+    }
+};
+
+class Perro : public Animales {
+private:
+    std::string raza;
+public:
+    Perro(std::string raza, std::string nombre) : Animales(nombre) {
+        this->raza = raza;
+    }
+    void correr() {
+        std::cout << "corriendo...." << std::endl;
+    }
+    void jugar() {
+        std::cout << "jugando..." << std::endl;
+    }
+};
+
+

@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+
+class Persona {
+    std::string nombre;
+    int edad;
+    std::string cedula;
+public:
+    Persona(std::string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    std::string getCedula() {
+        return cedula;
+    }
+    void setCedula(std::string cedula) {
+        this->cedula = cedula;
+    }
+    void comer() {
+        std::cout << this->nombre << " Esta comiendo...." << std::endl;
+    }
+    void dormir() {
+        std::cout << this->nombre << " Esta durmiendo..." << std::endl;
+    }
+};
+
+int main() {
+    Persona persona("John Doe", 25);
+    persona.comer();
+    persona.dormir();
+    return 0;
+}
+

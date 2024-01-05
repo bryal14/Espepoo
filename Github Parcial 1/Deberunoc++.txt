@@ -1,0 +1,85 @@
+#include <iostream>
+#include <string>
+
+class Perro {
+    std::string nombre;
+    int edad;
+public:
+    Perro(std::string nombre, int edad) : nombre(nombre), edad(edad) {}
+    void comer() {
+        std::cout << nombre << " está comiendo" << std::endl;
+    }
+    void ladrar() {
+        std::cout << nombre << " está ladrando" << std::endl;
+    }
+    void saltar() {
+        std::cout << nombre << " está saltando" << std::endl;
+    }
+};
+
+class Gato {
+    std::string nombre;
+    int edad;
+public:
+    Gato(std::string nombre, int edad) : nombre(nombre), edad(edad) {}
+    void ronronear() {
+        std::cout << nombre << " está ronroneando" << std::endl;
+    }
+    void rasgar() {
+        std::cout << nombre << " está rasgando" << std::endl;
+    }
+    void acostar() {
+        std::cout << nombre << " se está acostando" << std::endl;
+    }
+};
+
+class Persona {
+    std::string nombre;
+    int edad;
+public:
+    Persona(std::string nombre, int edad) : nombre(nombre), edad(edad) {}
+    void comer() {
+        std::cout << nombre << " está comiendo" << std::endl;
+    }
+    void dormir() {
+        std::cout << nombre << " está durmiendo" << std::endl;
+    }
+    void saltar() {
+        std::cout << nombre << " está saltando" << std::endl;
+    }
+};
+
+class vehiculo {
+    std::string marca;
+    int velocidad;
+public:
+    vehiculo(std::string marca, int velocidad) : marca(marca), velocidad(velocidad) {}
+    void multa() {
+        std::cout << "El vehículo de marca " << marca << " ha sido multado" << std::endl;
+    }
+};
+
+int main() {
+    std::cout << "Hello World!" << std::endl;
+    
+    Perro p1("Max", 5);
+    p1.comer();
+    p1.ladrar();
+    p1.saltar();
+    
+    Gato p2("Michu", 6);
+    p2.ronronear();
+    p2.rasgar();
+    p2.acostar();
+    
+    Persona p3("Josue", 24);
+    p3.comer();
+    p3.dormir();
+    p3.saltar();
+    
+    vehiculo p4("Mazda", 50);
+    p4.multa();
+    
+    return 0;
+}
+

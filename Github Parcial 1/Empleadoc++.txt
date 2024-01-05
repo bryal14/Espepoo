@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+class Empleado {
+    std::string nombre;
+public:
+    Empleado(std::string nombre) {
+        this->nombre = nombre;
+    }
+    void ascenso() {
+        std::cout << "El desempeño es excelente" << std::endl;
+        std::cout << "Ascendido...." << std::endl;
+    }
+    void despido() {
+        std::cout << "El desempeño es terrible" << std::endl;
+        std::cout << "Despedido..." << std::endl;
+    }
+};
+
+int main() {
+    Empleado empleado("John Doe");
+    empleado.ascenso();
+    empleado.despido();
+    return 0;
+}
+
+

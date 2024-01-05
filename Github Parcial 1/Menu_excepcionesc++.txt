@@ -1,0 +1,34 @@
+#include <iostream>
+
+int main() {
+    try {
+        std::cout << "---------MENU-----------" << std::endl;
+        std::cout << "1 SUMA" << std::endl;
+        std::cout << "2 RESTA" << std::endl;
+        std::cout << "4 Multiplicacion" << std::endl;
+        std::cout << "Elija la operacion deseada" << std::endl;
+        int choice;
+        std::cin >> choice;
+        switch (choice) {
+            case 1:
+                std::cout << "Sumando..." << std::endl;
+                break;
+            case 2:
+                std::cout << "Restando..." << std::endl;
+                break;
+            case 3:
+                std::cout << "Multiplicando" << std::endl;
+                break;
+            default:
+                std::cout << "La operacion no existe" << std::endl;
+                break;
+        }
+    } catch (std::exception& e) {
+        std::cout << "\nSolo debes ingresar numeros, no letras\n" << std::endl;
+    } finally {
+        std::cout << "\nPrograma terminado, vuelva a intentarlo\n" << std::endl;
+    }
+    return 0;
+}
+
+

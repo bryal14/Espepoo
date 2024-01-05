@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+class Zoo {
+    std::string nombre;
+    int edad;
+    int Nregistro;
+public:
+    Zoo(std::string nombre, int edad) {
+        this->nombre = nombre;
+        this->edad = edad;
+    }
+    int getNregistro() {
+        return Nregistro;
+    }
+    void setNregistro(int Nregistro) {
+        this->Nregistro = Nregistro;
+    }
+    void comer() {
+        std::cout << this->nombre << " Esta comiendo..." << std::endl;
+    }
+    void dormir() {
+        std::cout << this->nombre << " Esta durmiendo..." << std::endl;
+    }
+};
+
+int main() {
+    Zoo zoo("Nombre del zoo", 10);
+    zoo.setNregistro(12345);
+    zoo.comer();
+    zoo.dormir();
+    return 0;
+}
+
