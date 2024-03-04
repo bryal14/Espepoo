@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="Texto2" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="texto3" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
+                                      <Component id="titulo" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="enunciado1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="titulo2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="texto1" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="249" pref="249" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="titulo3" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Component id="Mostrarinformacion" min="-2" pref="172" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="Mostrardatos" min="-2" pref="155" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Component id="guardar" min="-2" pref="135" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="30" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="titulo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="enunciado1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="texto1" min="-2" pref="22" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="32767" attributes="0"/>
+              <Component id="titulo2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="Texto2" min="-2" pref="30" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="titulo3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+              <Component id="texto3" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Mostrarinformacion" alignment="3" min="-2" pref="44" max="-2" attributes="0"/>
+                  <Component id="Mostrardatos" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                  <Component id="guardar" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="titulo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="MOTOR"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="enunciado1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ingrese la marca del vehiculo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="texto1">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="texto1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="titulo2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ingrese a&#xf1;o de fabricacion del vehiculo:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Texto2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="titulo3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="El vehiculo presenta descomposiciones extra?"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="texto3">
+    </Component>
+    <Component class="javax.swing.JButton" name="Mostrarinformacion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mostrar informacion"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MostrarinformacionActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="Mostrardatos">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Mostrar datos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MostrardatosActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="guardar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Guardar datos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="guardarActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
